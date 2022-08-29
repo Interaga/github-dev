@@ -1,10 +1,10 @@
 {
   "name": "github-dev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the repo representative of a dev team that wants to trigger the github-action",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ncc build index.js --license licenses.txt"
   },
   "repository": {
     "type": "git",
