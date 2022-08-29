@@ -1,0 +1,24 @@
+{
+  "name": "github-dev",
+  "version": "0.0.1",
+  "description": "This is the repo representative of a dev team that wants to trigger the github-action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardpickett/github-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardpickett/github-dev/issues"
+  },
+  "homepage": "https://github.com/richardpickett/github-dev#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3"
+  }
+}
