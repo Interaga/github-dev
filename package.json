@@ -1,6 +1,6 @@
 {
   "name": "github-dev",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is the repo representative of a dev team that wants to trigger the github-action",
   "main": "index.js",
   "scripts": {
