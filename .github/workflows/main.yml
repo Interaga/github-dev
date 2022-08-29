@@ -10,7 +10,7 @@ jobs:
         id: hello
         uses: richardpickett/github-dev@main
         with:
-          who-to-greet: ${{ github.actor.name }}
+          who-to-greet: ${{ github.actor }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
