@@ -18,6 +18,6 @@ jobs:
         # github path/repo@<version or branch>
         uses: richardpickett/github-action@main
         with:
-          issue: ${{ github.issue }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
       # - name: Get the output time
       #   run: echo "The time was ${{ steps.threatModelAction.outputs.time }}"
