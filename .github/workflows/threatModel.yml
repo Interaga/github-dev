@@ -1,7 +1,9 @@
 name: "Threat Model"
 
 on:
-  [issues, pull_request]:
+  issues:
+    types: [opened, edited, closed, reopened, labeled]
+  pull_request:
     types: [opened, edited, closed, reopened, labeled]
   issue_comment:
     types: [created, edited, deleted]
