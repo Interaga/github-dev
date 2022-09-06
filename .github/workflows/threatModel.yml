@@ -1,4 +1,4 @@
-name: "Threat Model"
+name: 'Threat Model'
 
 on:
   issues:
