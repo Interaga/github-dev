@@ -1,9 +1,10 @@
-name: 'Threat Model'
+name: "Threat Model"
 
 on:
   [issues, pull_request]:
-    types: [opened, edited, transferred, closed, reopened, labeled]
+    types: [opened, edited, closed, reopened, labeled]
   issue_comment:
+    types: [created, edited, deleted]
 
 jobs:
   threatModel:
