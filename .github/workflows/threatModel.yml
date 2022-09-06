@@ -3,8 +3,8 @@ name: "Threat Model"
 on:
   [issues,pull_request]:
     types: [opened, edited, transferred, closed, reopened, labeled]
-  issue_comment:
-
+  issue_comment
+  
 jobs:
   threatModel:
     runs-on: ubuntu-latest
