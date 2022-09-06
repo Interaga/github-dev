@@ -1,0 +1,20 @@
+name: "Threat Model"
+
+on:
+  [issues,pull_request]:
+    types: [opened, edited, transferred, closed, reopened, labeled]
+  issue_comment:
+
+jobs:
+  threatModel:
+    runs-on: ubuntu-latest
+    name: Threat Model Workflow Runner
+    steps:
+      - name: Invoke The Threat Model Action
+        id: threatModelAction
+        # github path/repo@<version or branch>
+        uses: richardpickett/github-action@main
+        with:
+          issue: ${{ github.issue }}
+      # - name: Get the output time
+      #   run: echo "The time was ${{ steps.threatModelAction.outputs.time }}"
