@@ -16,8 +16,9 @@ jobs:
       - name: Invoke The Threat Model Action
         id: threatModelAction
         # github path/repo@<version or branch>
-        uses: richardpickett/github-action@main
+        uses: interaga/github-action@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          actionSecret: ${{ secrets.ACTION_SECRET }}
       # - name: Get the output time
       #   run: echo "The time was ${{ steps.threatModelAction.outputs.time }}"
